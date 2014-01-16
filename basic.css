@@ -1,0 +1,383 @@
+
+/*----------------------------------------------------
+ * General CSS Styling
+ * Contains: Font styles */
+
+body {
+    margin: 0px;
+    font-size: 7pt;
+    font-family: verdana, calibri, sans-serif;
+}
+
+div.content {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Red BOLD Large*/
+h1 {
+    color: #90150d;
+    font-size: 10pt;
+}
+
+/* Red BOLD Medium*/
+h2 {
+    font-size: 8pt;
+    color: #90150d;
+}
+
+/* Black BOLD Medium*/
+h3 {
+    margin-bottom: 2px;
+    font-size: 8pt;
+    color: #000000;
+}
+
+/* White BOLD Medium*/
+h4 {
+    color: #ffffff;
+}
+
+/* Red nobold small*/
+h5 {
+    line-height: 10pt;
+    margin-top: 0;
+    color: #90150d;
+    font-size: 8pt;
+    font-weight: 100;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #c88f3d;
+}
+
+/*----------------------------------------------------
+ * TOP AREA  CSS ORGANIZING
+ * Contains: Andy Warhol Top image and sticker, NAV Formating */
+
+div.topArea {
+    position: relative;
+    width: 100%; /* Makes top area take entire top width*/
+    height: 140px;
+    background: #90150d;
+}
+
+.Absolute-center {
+    width: 50%;
+    min-width: 200px;
+    max-width: 375px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+div.topArea img {
+    position: absolute;
+    top: 16px;
+}
+
+div.topArea #Miller {
+    position: absolute;
+    text-align: right;
+    left: auto; right: -40px;
+    top: 80px;
+    color: #ffffff;
+    font-size: 10pt;
+    font-weight: 600;
+}
+
+div.topArea #topCircle {
+    text-align: center;
+    margin-right: 73px;
+}
+
+div.topArea #topCircle img {
+    top: 100px;
+}
+
+nav {
+    position: relative;
+    width: 100%; /* Makes top area take entire top width*/
+    height: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #90150d;
+    font-size: 8pt;
+    font-style: normal;
+}
+
+nav div#navLeft{
+    position: absolute;
+    left: -50px;
+}
+
+nav div#navRight {
+    position: absolute;
+    right: -70px;
+}
+
+nav div#navMid a{
+    position: absolute;
+    top: -25px;
+    left: 163px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/*----------------------------------------------------
+ *  FOOTER positioning...Also some index
+ * Contains: See above */
+
+footer {
+    text-align: center;
+    width: 100%; /* Makes top area take entire top width*/
+    height: 100px;
+    font-size: 8pt;
+    color: #c88f3d;
+    background: #90150d;
+}
+
+/* unslider formating and dot fix*/
+
+div#bannerHolder {
+    position: relative;
+    max-width: 800px;
+    min-width: 200px;
+    margin: auto;
+}
+
+div.banner {
+    position: relative;
+    overflow: auto;
+    margin-right: 25px;
+    margin-left: -25px;
+    }
+    
+div.banner li {
+    list-style: none; }
+    
+div.banner ul li {
+    float: left; }
+
+.dots {
+  position: absolute;
+  left: 0;
+  right: 230px;
+  bottom: 20px;
+  text-align: center;
+}
+
+.dots li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  text-indent: -999em;
+  border: 2px solid #c88f3d;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: .4;
+  -webkit-transition: background .5s, opacity .5s;
+  -moz-transition: background .5s, opacity .5s;
+  transition: background .5s, opacity .5s;
+}
+
+.dots li.active {
+  background: #90150d;
+  opacity: 1;
+}
+
+
+/*----------------------------------------------------
+ *  ABOUT positioning*/
+
+div#about {
+    text-align: justify;
+    position: relative;
+    width: 40%;
+    min-width: 175px;
+    margin: auto;
+}
+
+div#about h1 {
+    text-align: left;
+}
+
+div#about p{
+    padding-left: 30px;
+}
+
+/*----------------------------------------------------
+ *  VISIT positioning*/
+
+div#visit {
+    position: relative;
+    width: 40%;
+    margin: auto;
+    text-align: left;
+}
+
+div#visit div#hours{
+    float: left;
+    padding-right: 75px;
+}
+
+div#visit div#top {
+    margin-top: 15px;
+}
+
+div#visit table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+div#visit th#contact {
+    color: #ffffff;
+    padding-left: 20px;
+    height: 25px;
+    width: 45%;
+    background: #90150d;
+}
+
+div#visit td.contact {
+    background: #f4f4f4;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div#visit div.map {
+    text-align: center;
+}
+
+div#visit div.descrip a{
+    text-align: left;
+    color: #c88f3d;
+    padding-left: 16px;
+}
+
+div#visit div.descrip {
+    text-align: left;
+}
+
+/*----------------------------------------------------
+ *  EXHIBITION positioning*/
+
+div#exhibition {
+    position: relative;
+    width: 40%;
+    margin: auto;
+    text-align: left;
+}
+
+div#exhibition table {
+    margin-top: 30px;
+}
+
+div#exhibition td {
+    vertical-align: top;
+}
+
+div#exhibition td.art {
+    float: right;
+}
+
+div#exhibition td.description {
+    padding-left: 30px;
+}
+
+/*----------------------------------------------------
+ *  BEYOND positioning*/
+
+div#beyond {
+    position: relative;
+    width: 40%;
+    margin: auto;
+    text-align: left;
+}
+
+div#beyond table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+div#beyond td {
+    vertical-align: top;
+}
+
+div#beyond th#resources {
+    text-align: right;
+}
+
+div#beyond td#museums {
+    max-width: 200px;
+    padding-right: 60px;
+    border-right: 1px solid #c88f3d;
+}
+
+div#beyond td#museums p{
+    padding-left: 10px;
+    margin-top: 2px;
+    padding-bottom: 10px;
+}
+
+div#beyond td#resources {
+    text-align: right;
+    padding-left: 60px;
+}
+
+div#beyond th {
+    border-bottom: 1px solid #c88f3d;
+}
+
+div#beyond div#ad {
+    text-align: center;
+}
+
+/*----------------------------------------------------
+ *  SUPPORT US positioning*/
+
+div#support {
+    position: relative;
+    width: 40%;
+    margin: auto;
+    text-align: left;
+}
+
+div#support td {
+    vertical-align: top;
+}
+
+div#support td#image {
+    padding-top: 10px;
+}
+
+div#support td#feedback {
+    min-width: 400px;
+    max-width: 500px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.wrapper {
+    margin: 10px;
+}
